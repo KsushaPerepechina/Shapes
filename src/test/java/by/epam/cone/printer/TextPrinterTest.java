@@ -1,7 +1,7 @@
 package by.epam.cone.printer;
 
 import by.epam.cone.exception.InaccessibleFileException;
-import by.epam.cone.reader.TextReader;
+import by.epam.cone.reader.DataReader;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -41,29 +41,29 @@ public class TextPrinterTest {
     @Test
     public void writeLineTest() throws InaccessibleFileException {
         textPrinter.writeString(STRING_FILE_PATH, OUTPUT_LINE);
-        TextReader textReader = new TextReader();
-        List<String> fileContent = textReader.readAllLines(STRING_FILE_PATH);
+        DataReader dataReader = new DataReader();
+        List<String> fileContent = dataReader.readAllLines(STRING_FILE_PATH);
         String fileLastLine = fileContent.get(fileContent.size() - 1) + "\n";
         Assert.assertEquals(fileLastLine, OUTPUT_LINE);
     }
 
     @Test(expectedExceptions = InaccessibleFileException.class,
             expectedExceptionsMessageRegExp = "File path <" + STRING_FILE_PATH + "ttt" + "> is incorrect.")
-    public void writeInFileTest() throws IOException {
+    public void writeInFileTest() throws InaccessibleFileException {
         textPrinter.writeString(STRING_FILE_PATH + "ttt", OUTPUT_LINE);
 
     }
 
     @Test(expectedExceptions = InaccessibleFileException.class,
             expectedExceptionsMessageRegExp = "File <" + STRING_FILE_PATH + "> does not exist.")
-    public void writeInNonexistentFileTest() throws IOException {
+    public void writeInNonexistentFileTest() throws Exception {
         Files.delete(Paths.get(STRING_FILE_PATH));
         textPrinter.writeString(STRING_FILE_PATH, OUTPUT_LINE);
     }
 
     @Test(expectedExceptions = InaccessibleFileException.class,
             expectedExceptionsMessageRegExp = "Writing to file <" + STRING_FILE_PATH + "> is not allowed.")
-    public void writeInReadOnlyFileTest() throws IOException {
+    public void writeInReadOnlyFileTest() throws InaccessibleFileException {
         testFile.setWritable(false);
         textPrinter.writeString(STRING_FILE_PATH, OUTPUT_LINE);
     }

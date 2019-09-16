@@ -1,5 +1,7 @@
 package by.epam.cone.action;
 
+import by.epam.cone.entity.Point;
+
 public interface PointAction {
-    double calculateSegmentLength(double xA, double yA, double zA, double xB, double yB, double zB);
+    double calculateSegmentLength(Point a, Point b);
 }

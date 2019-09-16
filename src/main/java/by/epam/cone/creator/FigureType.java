@@ -1,4 +1,4 @@
-package by.epam.cone.action.factory;
+package by.epam.cone.creator;
 
 public enum FigureType {
     CONE

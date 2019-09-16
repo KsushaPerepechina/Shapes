@@ -12,8 +12,8 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
 
-public class TextReader {
-    private static final Logger log = LogManager.getLogger(TextReader.class);
+public class DataReader {
+    private static final Logger log = LogManager.getLogger(DataReader.class);
 
     public List<String> readAllLines(final String filePath) throws InaccessibleFileException {
         List<String> fileContent = null;

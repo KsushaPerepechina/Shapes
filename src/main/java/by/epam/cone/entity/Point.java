@@ -1,6 +1,7 @@
 package by.epam.cone.entity;
 
 import java.util.Objects;
+import java.util.StringJoiner;
 
 public class Point {
     private double coordinateX;
@@ -57,10 +58,10 @@ public class Point {
 
     @Override
     public String toString() {
-        return "Point{" +
-                "coordinateX=" + coordinateX +
-                ", coordinateY=" + coordinateY +
-                ", coordinateZ=" + coordinateZ +
-                '}';
+        return new StringJoiner(", ", Point.class.getSimpleName() + "[", "]")
+                .add("coordinateX=" + coordinateX)
+                .add("coordinateY=" + coordinateY)
+                .add("coordinateZ=" + coordinateZ)
+                .toString();
     }
 }

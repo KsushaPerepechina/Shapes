@@ -15,8 +15,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class TextReaderTest {
-    private TextReader textReader;
+public class DataReaderTest {
+    private DataReader dataReader;
     private TextPrinter textPrinter;
     private static final String STRING_FILE_PATH = "data/test_file.txt";
     private Path FILE_PATH = Paths.get(STRING_FILE_PATH);
@@ -24,7 +24,7 @@ public class TextReaderTest {
 
     @BeforeClass
     public void setUp() throws IOException {
-        textReader = new TextReader();
+        dataReader = new DataReader();
         textPrinter = new TextPrinter();
         Files.createFile(FILE_PATH);
         inputLines = new ArrayList<>(
@@ -45,6 +45,6 @@ public class TextReaderTest {
                 e.printStackTrace();
             }
         });
-        Assert.assertEquals(textReader.readAllLines(STRING_FILE_PATH), inputLines);
+        Assert.assertEquals(dataReader.readAllLines(STRING_FILE_PATH), inputLines);
     }
 }

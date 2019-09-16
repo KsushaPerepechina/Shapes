@@ -2,7 +2,7 @@ package by.epam.cone.parser;
 
 import by.epam.cone.entity.Cone;
 import by.epam.cone.entity.Point;
-import by.epam.cone.exception.ConeParseException;
+import by.epam.cone.exception.ConeException;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -20,12 +20,12 @@ public class ParametersStringToConeParserTest {
     }
 
     @Test
-    public void parseTest() throws ConeParseException {
-        Assert.assertEquals(parametersStringToConeParser.parse(coneData), cone);
+    public void parseTest() throws ConeException {
+        Assert.assertEquals(parametersStringToConeParser.parse(coneData), cone);//TODO !methods in assert
     }
 
-    @Test(expectedExceptions = ConeParseException.class)
-    public void parseUnmatchedPositionTest() throws ConeParseException {
+    @Test(expectedExceptions = ConeException.class)
+    public void parseUnmatchedPositionTest() throws ConeException {
         parametersStringToConeParser.parse(coneData + ", height 5.5");
     }
 }

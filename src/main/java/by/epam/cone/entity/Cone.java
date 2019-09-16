@@ -1,8 +1,18 @@
 package by.epam.cone.entity;
 
-import java.util.Objects;
+import by.epam.cone.generator.IdGenerator;
+import by.epam.cone.observer.ConeEvent;
+import by.epam.cone.observer.Observable;
+import by.epam.cone.observer.Observer;
 
-public class Cone extends Figure {
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
+import java.util.StringJoiner;
+
+public class Cone implements Observable {
+    private List<Observer> observers = new ArrayList<>();
+    private long id;
     private Point top;
     private Point baseCircleCenter;
     private double radiusOfRotation;
@@ -14,6 +24,17 @@ public class Cone extends Figure {
         this.top = top;
         this.baseCircleCenter = baseCircleCenter;
         this.radiusOfRotation = radiusOfRotation;
+        this.id = IdGenerator.generateId();
+        notifyAllObservers();
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+        notifyAllObservers();
     }
 
     public Point getTop() {
@@ -22,6 +43,7 @@ public class Cone extends Figure {
 
     public void setTop(Point top) {
         this.top = top;
+        notifyAllObservers();
     }
 
     public Point getBaseCircleCenter() {
@@ -30,6 +52,7 @@ public class Cone extends Figure {
 
     public void setBaseCircleCenter(Point baseCircleCenter) {
         this.baseCircleCenter = baseCircleCenter;
+        notifyAllObservers();
     }
 
     public double getRadiusOfRotation() {
@@ -38,6 +61,7 @@ public class Cone extends Figure {
 
     public void setRadiusOfRotation(double radiusOfRotation) {
         this.radiusOfRotation = radiusOfRotation;
+        notifyAllObservers();
     }
 
     @Override
@@ -57,10 +81,28 @@ public class Cone extends Figure {
 
     @Override
     public String toString() {
-        return "Cone{" +
-                "top=" + top +
-                ", baseCircleCenter=" + baseCircleCenter +
-                ", radiusOfRotation=" + radiusOfRotation +
-                '}';
+        return new StringJoiner(", ", Cone.class.getSimpleName() + "[", "]")
+                .add("top=" + top)
+                .add("baseCircleCenter=" + baseCircleCenter)
+                .add("radiusOfRotation=" + radiusOfRotation)
+                .toString();
+    }
+
+    @Override
+    public void addObserver(Observer observer) {
+        observers.add(observer);
+        observer.handleEvent(new ConeEvent(this));
+    }
+
+    @Override
+    public void removeObserver(Observer observer) {
+        observers.remove(observer);
+    }
+
+    @Override
+    public void notifyAllObservers() {
+        for (Observer observer : observers) {
+            observer.handleEvent(new ConeEvent(this));
+        }
     }
 }
