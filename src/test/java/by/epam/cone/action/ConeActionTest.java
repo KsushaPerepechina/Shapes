@@ -3,6 +3,7 @@ package by.epam.cone.action;
 import by.epam.cone.action.impl.ConeActionImpl;
 import by.epam.cone.entity.Cone;
 import by.epam.cone.entity.Point;
+import by.epam.cone.exception.ConeException;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
@@ -15,7 +16,7 @@ public class ConeActionTest {
     private Cone cone;
 
     @BeforeClass
-    public void setUp() {
+    public void setUp() throws ConeException {
         coneAction = new ConeActionImpl();
         stretchedCone = new Cone(new Point(0, 0, 8),
                 new Point (0, 0, 0), 2);
@@ -102,6 +103,21 @@ public class ConeActionTest {
         Assert.assertEquals(actual, expected, 0.01);
     }
 
+    @Test
+    public void isStraightCircularConeTest() {
+        boolean actual = coneAction.isStraightCircularCone(compressedCone);
+        Assert.assertTrue(actual);
+    }
 
-    //TODO tests w/ exceptions
+    @Test
+    public void baseCircleBelongsToAnyCoordinatePlaneTest() {
+        boolean actual = coneAction.baseCircleBelongsToAnyCoordinatePlane(stretchedCone);
+        Assert.assertTrue(actual);
+    }
+
+    @Test
+    public void baseCircleDoesNotBelongToAnyCoordinatePlaneTest() {
+        boolean actual = coneAction.baseCircleBelongsToAnyCoordinatePlane(compressedCone);
+        Assert.assertFalse(actual);
+    }
 }

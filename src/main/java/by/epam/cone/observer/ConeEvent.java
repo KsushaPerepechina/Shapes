@@ -10,7 +10,7 @@ public class ConeEvent extends EventObject {
         super(source);
     }
 
-    public Cone getCone(){
+    public Cone getCone() {
         return (Cone)getSource();
     }
 }

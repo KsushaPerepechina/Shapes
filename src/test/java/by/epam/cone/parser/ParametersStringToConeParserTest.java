@@ -13,7 +13,7 @@ public class ParametersStringToConeParserTest {
     private Cone cone;
 
     @BeforeClass
-    public void setUp() {
+    public void setUp() throws ConeException {
         parametersStringToConeParser = new ParametersStringToConeParser();
         coneData = "top (0;0;0), base circle center (0;0;-5.5), radius of rotation 4";
         cone = new Cone(new Point(0, 0, 0), new Point(0,0,-5.5), 4);
@@ -21,7 +21,8 @@ public class ParametersStringToConeParserTest {
 
     @Test
     public void parseTest() throws ConeException {
-        Assert.assertEquals(parametersStringToConeParser.parse(coneData), cone);//TODO !methods in assert
+        Cone actual = parametersStringToConeParser.parse(coneData);
+        Assert.assertEquals(actual, cone);
     }
 
     @Test(expectedExceptions = ConeException.class)

@@ -1,16 +1,15 @@
-package by.epam.cone.specification.searchSpecification;
+package by.epam.cone.specification;
 
 import by.epam.cone.action.ConeAction;
 import by.epam.cone.action.impl.ConeActionImpl;
 import by.epam.cone.entity.Cone;
-import by.epam.cone.specification.Specification;
 
-public class SearchByVolumeRange implements Specification<Cone> {
+public class VolumeRangeSpecification implements Specification<Cone> {
     private double minVolume;
     private double maxVolume;
     private ConeAction coneAction = new ConeActionImpl();
 
-    public SearchByVolumeRange(double minVolume, double maxVolume) {
+    public VolumeRangeSpecification(double minVolume, double maxVolume) {
         this.minVolume = minVolume;
         this.maxVolume = maxVolume;
     }

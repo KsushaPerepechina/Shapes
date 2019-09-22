@@ -1,16 +1,15 @@
-package by.epam.cone.specification.searchSpecification;
+package by.epam.cone.specification;
 
 import by.epam.cone.action.ConeAction;
 import by.epam.cone.action.impl.ConeActionImpl;
 import by.epam.cone.entity.Cone;
-import by.epam.cone.specification.Specification;
 
-public class SearchByAreaRange implements Specification<Cone> {
+public class AreaRangeSpecification implements Specification<Cone> {
     private double minArea;
     private double maxArea;
     private ConeAction coneAction = new ConeActionImpl();
 
-    public SearchByAreaRange(double minArea, double maxArea) {
+    public AreaRangeSpecification(double minArea, double maxArea) {
         this.minArea = minArea;
         this.maxArea = maxArea;
     }

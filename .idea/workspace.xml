@@ -2,52 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ce935fb-3360-466b-98ce-6ee8989c4b98" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/epam/cone/creator/GenericFigureFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/epam/cone/observer/Observer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/epam/cone/specification/Specification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/epam/cone/specification/searchSpecification/SearchByAreaRange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/epam/cone/specification/searchSpecification/SearchById.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/epam/cone/specification/searchSpecification/SearchByVolumeLowerBound.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/epam/cone/specification/searchSpecification/SearchByVolumeRange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/epam/cone/specification/sortSpecification/SortById.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/epam/cone/specification/sortSpecification/SortByRadius.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/epam/cone/specification/sortSpecification/SortByVolume.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/epam/cone/comparator/idComparator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/cone/action/ConeAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cone/action/ConeAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/cone/action/PointAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cone/action/PointAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/cone/action/factory/FigureType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cone/creator/FigureType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/cone/action/factory/GenericConeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cone/creator/GenericConeFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/cone/action/factory/GenericFactory.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/cone/action/impl/ConeActionImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cone/action/impl/ConeActionImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/cone/action/impl/PointActionImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cone/action/impl/PointActionImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/cone/creator/FigureType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/cone/creator/GenericConeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cone/creator/ConeFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/cone/creator/GenericFigureFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cone/creator/GenericFigureFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/cone/entity/Cone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cone/entity/Cone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/cone/entity/Figure.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/cone/entity/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cone/entity/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/cone/exception/ConeParseException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cone/exception/ConeException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/cone/exception/InaccessibleFileException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cone/exception/InaccessibleFileException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/cone/generator/IdGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cone/generator/IdGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/cone/observer/ConeEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cone/observer/ConeEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/cone/parser/ParametersStringToConeParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cone/parser/ParametersStringToConeParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/cone/reader/TextReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cone/reader/DataReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/cone/repository/ConeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cone/repository/ConeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/cone/repository/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cone/repository/Repository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/cone/specification/searchSpecification/SearchByAreaRange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cone/specification/AreaRangeSpecification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/cone/specification/searchSpecification/SearchById.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cone/specification/IdSpecification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/cone/specification/searchSpecification/SearchByVolumeLowerBound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cone/specification/VolumeLowerBoundSpecification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/cone/specification/searchSpecification/SearchByVolumeRange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cone/specification/VolumeRangeSpecification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/cone/specification/sortSpecification/SortById.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/cone/specification/sortSpecification/SortByRadius.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cone/comparator/radiusComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/cone/specification/sortSpecification/SortByVolume.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cone/comparator/volumeComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/cone/validation/ConeParametersStringValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cone/validation/ConeParametersStringValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/cone/validation/TxtFilePathValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cone/validation/TxtFilePathValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/cone/warehouse/ConeRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cone/warehouse/ConeRegister.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/by/epam/cone/action/ConeActionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/epam/cone/action/ConeActionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/by/epam/cone/action/PointActionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/epam/cone/action/PointActionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/by/epam/cone/parser/ParametersStringToConeParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/epam/cone/parser/ParametersStringToConeParserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/by/epam/cone/printer/TextPrinterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/epam/cone/printer/TextPrinterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/by/epam/cone/reader/TextReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/epam/cone/reader/DataReaderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/by/epam/cone/validation/ConeParametersStringValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/epam/cone/validation/ConeParametersStringValidatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/epam/cone/action/ConeAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/epam/cone/action/PointAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/epam/cone/action/PointAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/epam/cone/action/impl/ConeActionImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/epam/cone/action/impl/PointActionImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/epam/cone/action/impl/PointActionImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/epam/cone/entity/Cone.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/epam/cone/entity/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/epam/cone/entity/Point.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/epam/cone/exception/ConeParseException.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/by/epam/cone/exception/InaccessibleFileException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/epam/cone/exception/InaccessibleFileException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/epam/cone/parser/ParametersStringToConeParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/epam/cone/reader/TextReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/epam/cone/validation/ConeParametersStringValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/epam/cone/validation/ConeParametersStringValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/epam/cone/validation/TxtFilePathValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/epam/cone/validation/TxtFilePathValidator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/by/epam/cone/action/ConeActionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/by/epam/cone/action/ConeActionTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/by/epam/cone/action/PointActionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/by/epam/cone/action/PointActionTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/by/epam/cone/reader/TextReaderTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/by/epam/cone/parser/ParametersStringToConeParserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/by/epam/cone/parser/ParametersStringToConeParserTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -61,7 +50,20 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/entity/Cone.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1515">
+              <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -78,57 +80,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/validation/InputConeDataValidator.java" />
-        <option value="$PROJECT_DIR$/src/test/java/by/epam/cone/validation/ConeParametersStringValidatorTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/printer/TextPrinter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/printer/TextPrinterTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/by/epam/cone/reader/TextReaderTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/by/epam/cone/parser/RecipePositionToIngredientParserTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/action/factory/GenericFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/action/factory/GenericConeFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/action/factory/FigureType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/entity/Figure.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/entity/Point.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/exception/InaccessibleFileException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/reader/DataReader.java" />
-        <option value="$PROJECT_DIR$/src/test/java/by/epam/cone/parser/ParametersStringToConeParserTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/action/creator/GenericFigureFactory.java" />
-        <option value="$PROJECT_DIR$/src/test/java/by/epam/cone/printer/TextPrinterTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/parser/ParametersStringToConeParser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/action/impl/PointActionImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/action/PointAction.java" />
-        <option value="$PROJECT_DIR$/src/test/java/by/epam/cone/action/ConeActionTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/by/epam/cone/action/PointActionTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/action/impl/StraightCircularStraightCircularConeActionImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/entity/StraightCircularCone.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/action/impl/StraightCircularConeActionImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/action/impl/ConeActionImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/action/ConeAction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/observer/Observed.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/action/Generator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/creator/Generator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/observer/ConeEvent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/warehouse/Warehouse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/repository/Repository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/repository/ConeRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/specification/searchSpecification/SearchByRangeOfVolume.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/specification/searchSpecification/SearchByRangeOfArea.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/specification/searchSpecification/SearchById.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/specification/searchSpecification/SearchVolumeGreater.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/specification/sortSpecification/SortById.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/specification/sortSpecification/SortByLengthOfSide.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/specification/sortSpecification/SortByRadius.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/specification/sortSpecification/SortByVolume.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/specification/Specification.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/observer/Observable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/entity/Cone.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/generator/Generator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/generator/IdGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/specification/searchSpecification/SearchByVolumeLowerBound.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/observer/Observer.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/warehouse/ConeRegisterUpdateHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/warehouse/ConeRegister.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/exception/InaccessibleFileException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/creator/GenericConeFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/specification/sortSpecification/SortByRadius.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/action/impl/ConeCAImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/action/impl/ConeCalculatorImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/action/impl/TruncatedConeCalculatorImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/action/ConeCalculator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/action/TruncatedConeCalculator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/action/TruncatedConeAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/specification/sortSpecification/SortById.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/specification/sortSpecification/SortByVolume.java" />
         <option value="$PROJECT_DIR$/data/input.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/observer/ConeEvent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/repository/Repository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/repository/ConeRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/validation/ConeParametersStringValidator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/validation/TxtFilePathValidator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/parser/ParametersStringToConeParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/creator/ConeFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/creator/GenericFigureFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/generator/IdGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/action/ConeAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/action/impl/ConeActionImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/action/impl/TruncatedConeActionImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/by/epam/cone/action/TruncatedConeActionTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/by/epam/cone/parser/ParametersStringToConeParserTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/by/epam/cone/warehouse/ConeRegisterTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/warehouse/ConeRegister.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/warehouse/ConeRegisterEntry.java" />
+        <option value="$PROJECT_DIR$/src/test/java/by/epam/cone/warehouse/ConeRegisterUpdateHandlerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/by/epam/cone/repository/ConeRepositoryTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/by/epam/cone/specification/searchSpecification/SearchByAreaRangeTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/by/epam/cone/specification/searchSpecification/SearchByAreaRange.java" />
+        <option value="$PROJECT_DIR$/src/test/java/by/epam/cone/action/ConeActionTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/by/epam/cone/specification/sortSpecification/SortSpecificationTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/by/epam/cone/specification/searchSpecification/SearchSpecificationTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/comparator/idComparator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/specification/AreaRangeSpecification.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/specification/IdSpecification.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/specification/VolumeLowerBoundSpecification.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/specification/VolumeRangeSpecification.java" />
+        <option value="$PROJECT_DIR$/src/test/java/by/epam/cone/comparator/ComparatorTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/by/epam/cone/specification/SpecificationTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/cone/entity/Cone.java" />
       </list>
     </option>
   </component>
@@ -142,9 +144,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Course" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -155,11 +157,6 @@
             <path>
               <item name="cone" type="b2602c69:ProjectViewProjectNode" />
               <item name="cone" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cone" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -182,36 +179,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cone" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cone" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cone" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cone" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cone" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cone" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cone" type="462c0819:PsiDirectoryNode" />
-              <item name="action" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -223,7 +190,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/by/epam/cone" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/by/epam/cone" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -238,6 +205,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="by.epam.cone.specification" />
       <recent name="by.epam.cone" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -248,8 +216,8 @@
       <recent name="by.epam.cone.printer" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java/by/epam/cone" />
       <recent name="$PROJECT_DIR$/src/test/java/by/epam/cone" />
+      <recent name="$PROJECT_DIR$/src/main/java/by/epam/cone" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
@@ -265,17 +233,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.PointActionTest.calculateSegmentLengthTest">
-    <configuration name="ConeActionTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.SpecificationTest">
+    <configuration name="ComparatorTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="cone" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.epam.cone.generator.*" />
+          <option name="PATTERN" value="by.epam.cone.comparator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="by.epam.cone.action" />
-      <option name="MAIN_CLASS_NAME" value="by.epam.cone.action.ConeActionTest" />
+      <option name="PACKAGE_NAME" value="by.epam.cone.specification.sortSpecification" />
+      <option name="MAIN_CLASS_NAME" value="by.epam.cone.comparator.ComparatorTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -283,52 +251,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConeActionTest.calculateBaseCircleAreaTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchSpecificationTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="cone" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.epam.cone.generator.*" />
+          <option name="PATTERN" value="by.epam.cone.specification.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="by.epam.cone.action" />
-      <option name="MAIN_CLASS_NAME" value="by.epam.cone.action.ConeActionTest" />
-      <option name="METHOD_NAME" value="calculateBaseCircleAreaTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConeActionTest.calculateFullSurfaceAreaTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="cone" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="by.epam.cone.generator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="by.epam.cone.action" />
-      <option name="MAIN_CLASS_NAME" value="by.epam.cone.action.ConeActionTest" />
-      <option name="METHOD_NAME" value="calculateFullSurfaceAreaTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PointActionTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="cone" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="by.epam.cone.generator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="by.epam.cone.action" />
-      <option name="MAIN_CLASS_NAME" value="by.epam.cone.action.PointActionTest" />
+      <option name="PACKAGE_NAME" value="by.epam.cone.specification.searchSpecification" />
+      <option name="MAIN_CLASS_NAME" value="by.epam.cone.specification.SpecificationTest.SearchSpecificationTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -336,17 +268,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PointActionTest.calculateSegmentLengthTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchSpecificationTest.searchByIdPositiveTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="cone" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.epam.cone.generator.*" />
+          <option name="PATTERN" value="by.epam.cone.specification.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="by.epam.cone.action" />
-      <option name="MAIN_CLASS_NAME" value="by.epam.cone.action.PointActionTest" />
-      <option name="METHOD_NAME" value="calculateSegmentLengthTest" />
+      <option name="PACKAGE_NAME" value="by.epam.cone.specification.searchSpecification" />
+      <option name="MAIN_CLASS_NAME" value="by.epam.cone.specification.SpecificationTest.SearchSpecificationTest" />
+      <option name="METHOD_NAME" value="searchByIdPositiveTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpecificationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="cone" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.epam.cone.specification.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="by.epam.cone.specification" />
+      <option name="MAIN_CLASS_NAME" value="by.epam.cone.specification.SpecificationTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpecificationTest.searchByRangeOfAreaNegativeTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="cone" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.epam.cone.specification.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="by.epam.cone.specification" />
+      <option name="MAIN_CLASS_NAME" value="by.epam.cone.specification.SpecificationTest" />
+      <option name="METHOD_NAME" value="searchByRangeOfAreaNegativeTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -356,8 +323,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.PointActionTest.calculateSegmentLengthTest" />
-        <item itemvalue="TestNG.PointActionTest" />
+        <item itemvalue="TestNG.SpecificationTest" />
+        <item itemvalue="TestNG.SpecificationTest.searchByRangeOfAreaNegativeTest" />
+        <item itemvalue="TestNG.ComparatorTest" />
+        <item itemvalue="TestNG.SearchSpecificationTest" />
+        <item itemvalue="TestNG.SearchSpecificationTest.searchByIdPositiveTest" />
       </list>
     </recent_temporary>
   </component>
@@ -385,44 +355,50 @@
       <workItem from="1568305256646" duration="7000" />
       <workItem from="1568564324894" duration="97000" />
       <workItem from="1568608126847" duration="24062000" />
-      <workItem from="1568664211973" duration="1363000" />
+      <workItem from="1568664211973" duration="1418000" />
+      <workItem from="1568693677828" duration="640000" />
+      <workItem from="1568700267099" duration="4648000" />
+      <workItem from="1568835728123" duration="162000" />
+      <workItem from="1568873367905" duration="988000" />
+      <workItem from="1569064318201" duration="430000" />
+      <workItem from="1569134846926" duration="18200000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ConeActionTest - 2019.09.16 at 11h 07m 17s.xml">
-      <configuration name="ConeActionTest" configurationId="TestNG" />
+    <history-entry file="SearchSpecificationTest - 2019.09.22 at 14h 57m 50s.xml">
+      <configuration name="SearchSpecificationTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ConeActionTest - 2019.09.16 at 11h 07m 28s.xml">
-      <configuration name="ConeActionTest" configurationId="TestNG" />
+    <history-entry file="SearchSpecificationTest - 2019.09.22 at 14h 57m 58s.xml">
+      <configuration name="SearchSpecificationTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ConeActionTest - 2019.09.16 at 11h 07m 48s.xml">
-      <configuration name="ConeActionTest" configurationId="TestNG" />
+    <history-entry file="SortSpecificationTest - 2019.09.22 at 14h 58m 04s.xml">
+      <configuration name="SortSpecificationTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ConeActionTest - 2019.09.16 at 11h 12m 17s.xml">
-      <configuration name="ConeActionTest" configurationId="TestNG" />
+    <history-entry file="ComparatorTest - 2019.09.22 at 15h 10m 26s.xml">
+      <configuration name="ComparatorTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ConeActionTest - 2019.09.16 at 11h 12m 49s.xml">
-      <configuration name="ConeActionTest" configurationId="TestNG" />
+    <history-entry file="ComparatorTest - 2019.09.22 at 15h 11m 02s.xml">
+      <configuration name="ComparatorTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ConeActionTest - 2019.09.16 at 11h 13m 01s.xml">
-      <configuration name="ConeActionTest" configurationId="TestNG" />
+    <history-entry file="ComparatorTest - 2019.09.22 at 15h 11m 18s.xml">
+      <configuration name="ComparatorTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PointActionTest - 2019.09.16 at 11h 13m 06s.xml">
-      <configuration name="PointActionTest" configurationId="TestNG" />
+    <history-entry file="ComparatorTest - 2019.09.22 at 15h 12m 30s.xml">
+      <configuration name="ComparatorTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PointActionTest - 2019.09.16 at 11h 13m 19s.xml">
-      <configuration name="PointActionTest" configurationId="TestNG" />
+    <history-entry file="SpecificationTest_searchByRangeOfAreaNegativeTest - 2019.09.22 at 15h 13m 56s.xml">
+      <configuration name="SpecificationTest.searchByRangeOfAreaNegativeTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PointActionTest_calculateSegmentLengthTest - 2019.09.16 at 11h 13m 31s.xml">
-      <configuration name="PointActionTest.calculateSegmentLengthTest" configurationId="TestNG" />
+    <history-entry file="SpecificationTest - 2019.09.22 at 15h 14m 46s.xml">
+      <configuration name="SpecificationTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PointActionTest_calculateSegmentLengthTest - 2019.09.16 at 11h 13m 42s.xml">
-      <configuration name="PointActionTest.calculateSegmentLengthTest" configurationId="TestNG" />
+    <history-entry file="SpecificationTest - 2019.09.22 at 15h 15m 34s.xml">
+      <configuration name="SpecificationTest" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49251000" />
+    <option name="totallyTimeSpent" value="74374000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -435,8 +411,41 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2936508" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24847375" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32959184" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32959184" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Educational.CheckDetails" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32959184" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31562883" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -466,29 +475,75 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../bsuir/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/exception/ArrayInitializationException.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/validation/PositiveIntegersStringValidator.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.resources">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/creator/FigureType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+        <state relative-caret-position="30">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/generator/IdGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding>
+            <element signature="e#207#208#0" expanded="true" />
+            <element signature="e#257#258#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/action/PointAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/observer/Observable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/observer/Observer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/parser/ParametersStringToConeParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="20" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/repository/Repository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/validation/ConeParametersStringValidator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
@@ -499,126 +554,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/cone/e.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/printer/TextPrinterTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/cone/printer/TextPrinter.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/printer/TextPrinter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="93" lean-forward="true" selection-start-line="15" selection-start-column="93" selection-end-line="15" selection-end-column="93" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/cone/reader/DataReaderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/cone/parser/RecipePositionToIngredientParserTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/creator/FigureType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/exception/ConeException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/exception/InaccessibleFileException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="47" lean-forward="true" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/reader/DataReader.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/action/impl/ConeActionImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="17" column="94" selection-start-line="17" selection-start-column="94" selection-end-line="17" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/creator/GenericConeFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/cone/printer/TextPrinterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/creator/GenericFigureFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/cone/validation/TxtFilePathValidatorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/cone/validation/ConeParametersStringValidatorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" column="92" selection-start-line="22" selection-start-column="79" selection-end-line="22" selection-end-column="92" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/cone/parser/ParametersStringToConeParserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="105" selection-start-line="23" selection-start-column="105" selection-end-line="23" selection-end-column="105" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/parser/ParametersStringToConeParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/action/PointAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -635,154 +577,251 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/action/impl/PointActionImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/action/impl/TruncatedConeActionImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/action/TruncatedConeAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/creator/ConeFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/creator/GenericFigureFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/action/ConeAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+        <state relative-caret-position="195">
+          <caret line="13" column="49" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/cone/parser/ParametersStringToConeParserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="67" selection-start-line="28" selection-start-column="67" selection-end-line="28" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/action/impl/ConeActionImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/cone/printer/TextPrinterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="925">
-          <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
+        <state relative-caret-position="745">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/specification/sortSpecification/SortById.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/cone/reader/DataReaderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="90">
+          <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/specification/searchSpecification/SearchByAreaRange.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="65" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/specification/searchSpecification/SearchByVolumeRange.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="67" selection-start-line="7" selection-start-column="67" selection-end-line="7" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/entity/Figure.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/entity/Point.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="59" column="18" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/entity/Cone.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/generator/IdGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/observer/Observable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/repository/Repository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/specification/searchSpecification/SearchById.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="56" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/specification/sortSpecification/SortByVolume.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/specification/sortSpecification/SortByRadius.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/cone/validation/ConeParametersStringValidatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+          <caret line="22" column="92" selection-start-line="22" selection-start-column="79" selection-end-line="22" selection-end-column="92" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/specification/searchSpecification/SearchByVolumeLowerBound.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/cone/action/TruncatedConeActionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+        <state relative-caret-position="730">
+          <caret line="53" column="90" selection-start-line="53" selection-start-column="90" selection-end-line="53" selection-end-column="90" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#425#426#0" expanded="true" />
-            <element signature="e#461#462#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/warehouse/ConeRegisterUpdateHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/warehouse/ConeRegisterEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+          <folding>
+            <element signature="e#639#640#0" expanded="true" />
+            <element signature="e#688#689#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/warehouse/ConeRegister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="31" lean-forward="true" selection-start-column="31" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#871#872#0" expanded="true" />
+            <element signature="e#893#894#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/cone/warehouse/ConeRegisterUpdateHandlerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/repository/ConeRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="46" column="1" lean-forward="true" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/cone/repository/ConeRepositoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/cone/specification/searchSpecification/SearchByVolumeRange.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/cone/specification/sortSpecification/SortById.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/cone/specification/sortSpecification/SortByRadius.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/cone/specification/searchSpecification/SearchByVolumeLowerBound.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/cone/specification/Specification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/cone/specification/sortSpecification/SortByVolume.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/cone/specification/searchSpecification/SearchById.java">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/observer/ConeEvent.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#179#180#0" expanded="true" />
+            <element signature="e#208#209#0" expanded="true" />
+            <element signature="e#237#238#0" expanded="true" />
+            <element signature="e#277#278#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/cone/specification/searchSpecification/SearchByAreaRange.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/cone/action/ConeActionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="32" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="14" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/comparator/volumeComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="67" selection-start-line="14" selection-start-column="67" selection-end-line="14" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/comparator/radiusComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="55" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/specification/AreaRangeSpecification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="60" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/comparator/idComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -796,70 +835,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="uml://JAVA/by.epam.cone">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>by.epam.cone</OriginalElement>
-          <nodes>
-            <node x="" y="">by.epam.cone.parser</node>
-            <node x="" y="">by.epam.cone.reader</node>
-            <node x="" y="">by.epam.cone.specification</node>
-            <node x="" y="">by.epam.cone.printer</node>
-            <node x="" y="">by.epam.cone.exception</node>
-            <node x="" y="">by.epam.cone.validation</node>
-            <node x="" y="">by.epam.cone.entity</node>
-            <node x="" y="">by.epam.cone.warehouse</node>
-            <node x="" y="">by.epam.cone.action</node>
-            <node x="" y="">by.epam.cone.creator</node>
-            <node x="" y="">by.epam.cone.observer</node>
-            <node x="" y="">by.epam.cone.generator</node>
-            <node x="" y="">by.epam.cone.repository</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="496.0" y="229.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-            <Category>Properties</Category>
-            <Category>Inner Classes</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/observer/Observer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/specification/VolumeRangeSpecification.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/repository/ConeRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/warehouse/ConeRegisterUpdateHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="60">
+          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/warehouse/ConeRegister.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/specification/VolumeLowerBoundSpecification.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="7" lean-forward="true" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+        <state relative-caret-position="60">
+          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/specification/IdSpecification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/cone/comparator/ComparatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/cone/specification/SpecificationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -867,20 +883,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/input.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="64" selection-start-line="2" selection-start-column="64" selection-end-line="2" selection-end-column="64" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/cone/action/ConeActionTest.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/cone/entity/Cone.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="24" selection-end-column="41" />
+        <state relative-caret-position="1515">
+          <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#896#897#0" expanded="true" />
-            <element signature="e#985#986#0" expanded="true" />
           </folding>
         </state>
       </provider>

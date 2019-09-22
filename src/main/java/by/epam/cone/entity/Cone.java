@@ -1,5 +1,6 @@
 package by.epam.cone.entity;
 
+import by.epam.cone.exception.ConeException;
 import by.epam.cone.generator.IdGenerator;
 import by.epam.cone.observer.ConeEvent;
 import by.epam.cone.observer.Observable;
@@ -20,11 +21,14 @@ public class Cone implements Observable {
     public Cone() {
     }
 
-    public Cone(Point top, Point baseCircleCenter, double radiusOfRotation) {
+    public Cone(Point top, Point baseCircleCenter, double radiusOfRotation) throws ConeException {
+        if (radiusOfRotation <= 0 && top.equals(baseCircleCenter)) {
+            throw new ConeException("Unable to create cone: invalid parameter values.");
+        }
+        this.id = IdGenerator.generateId();
         this.top = top;
         this.baseCircleCenter = baseCircleCenter;
         this.radiusOfRotation = radiusOfRotation;
-        this.id = IdGenerator.generateId();
         notifyAllObservers();
     }
 
@@ -32,16 +36,14 @@ public class Cone implements Observable {
         return id;
     }
 
-    public void setId(long id) {
-        this.id = id;
-        notifyAllObservers();
-    }
-
     public Point getTop() {
         return top;
     }
 
-    public void setTop(Point top) {
+    public void setTop(Point top) throws ConeException {
+        if (top.equals(baseCircleCenter)) {
+            throw new ConeException("Unable to create cone: top and base circle center can't be at one point in space.");
+        }
         this.top = top;
         notifyAllObservers();
     }
@@ -50,7 +52,10 @@ public class Cone implements Observable {
         return baseCircleCenter;
     }
 
-    public void setBaseCircleCenter(Point baseCircleCenter) {
+    public void setBaseCircleCenter(Point baseCircleCenter) throws ConeException {
+        if (top.equals(baseCircleCenter)) {
+            throw new ConeException("Unable to create cone: top and base circle center can't be at one point in space.");
+        }
         this.baseCircleCenter = baseCircleCenter;
         notifyAllObservers();
     }
@@ -59,7 +64,10 @@ public class Cone implements Observable {
         return radiusOfRotation;
     }
 
-    public void setRadiusOfRotation(double radiusOfRotation) {
+    public void setRadiusOfRotation(double radiusOfRotation) throws ConeException {
+        if (radiusOfRotation <= 0) {
+            throw new ConeException("Unable to create cone: radius of rotation must be represented by a positive number.");
+        }
         this.radiusOfRotation = radiusOfRotation;
         notifyAllObservers();
     }
@@ -69,14 +77,15 @@ public class Cone implements Observable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Cone cone = (Cone) o;
-        return Double.compare(cone.radiusOfRotation, radiusOfRotation) == 0 &&
+        return id == cone.id &&
+                Double.compare(cone.radiusOfRotation, radiusOfRotation) == 0 &&
                 top.equals(cone.top) &&
                 baseCircleCenter.equals(cone.baseCircleCenter);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(top, baseCircleCenter, radiusOfRotation);
+        return Objects.hash(id, top, baseCircleCenter, radiusOfRotation);
     }
 
     @Override
@@ -91,7 +100,7 @@ public class Cone implements Observable {
     @Override
     public void addObserver(Observer observer) {
         observers.add(observer);
-        observer.handleEvent(new ConeEvent(this));
+        //observer.handleEvent(new ConeEvent(this));
     }
 
     @Override
@@ -101,8 +110,6 @@ public class Cone implements Observable {
 
     @Override
     public void notifyAllObservers() {
-        for (Observer observer : observers) {
-            observer.handleEvent(new ConeEvent(this));
-        }
+        observers.forEach(observer -> observer.handleEvent(new ConeEvent(this)));
     }
 }

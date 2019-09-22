@@ -10,8 +10,7 @@ import java.util.Map;
 public class ConeRegister {
     private static ConeRegister register;
     private ConeAction coneAction = new ConeActionImpl();
-    private static Map<Long, Double> areas = new HashMap<>();
-    private static Map<Long, Double> volumes = new HashMap<>();
+    private Map<Long, ConeRegisterEntry> entries = new HashMap<>();
 
     public static ConeRegister getInstance() {
         if (register == null) {
@@ -21,12 +20,13 @@ public class ConeRegister {
     }
 
     public void addRecord(Cone cone) {
-        areas.put(cone.getId(), coneAction.calculateFullSurfaceArea(cone));
-        volumes.put(cone.getId(), coneAction.calculateVolume(cone));
+        long id = cone.getId();
+        double area = coneAction.calculateFullSurfaceArea(cone);
+        double volume = coneAction.calculateVolume(cone);
+        entries.put(id, new ConeRegisterEntry(area, volume));
     }
 
-    public void removeRecord(Cone cone) {
-        areas.remove(cone.getId());
-        volumes.remove(cone.getId());
+    public ConeRegisterEntry selectRecord(Cone cone) {
+        return entries.get(cone.getId());
     }
-}//TODO
+}

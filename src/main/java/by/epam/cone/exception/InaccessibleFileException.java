@@ -1,7 +1,5 @@
 package by.epam.cone.exception;
 
-import java.io.IOException;
-
 public class InaccessibleFileException extends Exception {
     public InaccessibleFileException() {
     }
