@@ -4,7 +4,7 @@ import by.epam.cone.entity.Cone;
 
 import java.util.Comparator;
 
-public class radiusComparator implements Comparator<Cone> {
+public class RadiusComparator implements Comparator<Cone> {
     @Override
     public int compare(Cone o1, Cone o2) {
         double radiusOfFirstCone = o1.getRadiusOfRotation();

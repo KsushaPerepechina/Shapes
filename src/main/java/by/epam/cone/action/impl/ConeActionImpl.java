@@ -7,7 +7,6 @@ import by.epam.cone.entity.Cone;
 import static java.lang.Math.*;
 
 public class ConeActionImpl implements ConeAction {
-    private PointAction pointAction = new PointActionImpl();
 
     public double calculateBaseCircleLength(Cone cone) {
         return 2 * PI * cone.getRadiusOfRotation();
@@ -18,6 +17,7 @@ public class ConeActionImpl implements ConeAction {
     }
 
     public double calculateHeight(Cone cone) {
+        PointAction pointAction = new PointActionImpl();
         return pointAction.calculateSegmentLength(cone.getTop(), cone.getBaseCircleCenter());
     }
 

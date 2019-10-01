@@ -10,8 +10,8 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 
-public class TextPrinter {
-    private static final Logger log = LogManager.getLogger(TextPrinter.class);
+public class DataPrinter {
+    private static final Logger log = LogManager.getLogger(DataPrinter.class);
 
     public void writeString(final String filePath, final String outputLine) throws InaccessibleFileException {
         TxtFilePathValidator txtFilePathValidator = new TxtFilePathValidator();

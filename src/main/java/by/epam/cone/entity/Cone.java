@@ -8,7 +8,6 @@ import by.epam.cone.observer.Observer;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 import java.util.StringJoiner;
 
 public class Cone implements Observable {
@@ -85,7 +84,13 @@ public class Cone implements Observable {
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, top, baseCircleCenter, radiusOfRotation);
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + Long.hashCode(id);
+        result = prime * result + top.hashCode();
+        result = prime * result + baseCircleCenter.hashCode();
+        result = prime * result + Double.hashCode(radiusOfRotation);
+        return result;
     }
 
     @Override
@@ -100,7 +105,7 @@ public class Cone implements Observable {
     @Override
     public void addObserver(Observer observer) {
         observers.add(observer);
-        //observer.handleEvent(new ConeEvent(this));
+        observer.handleEvent(new ConeEvent(this));
     }
 
     @Override

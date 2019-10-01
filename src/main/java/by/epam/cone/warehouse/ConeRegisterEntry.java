@@ -1,7 +1,5 @@
 package by.epam.cone.warehouse;
 
-import java.util.Objects;
-
 public class ConeRegisterEntry {
     private double area;
     private double volume;
@@ -22,6 +20,10 @@ public class ConeRegisterEntry {
 
     @Override
     public int hashCode() {
-        return Objects.hash(area, volume);
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + Double.hashCode(area);
+        result = prime * result + Double.hashCode(volume);
+        return result;
     }
 }

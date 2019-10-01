@@ -26,42 +26,42 @@ public class ComparatorTest {
 
     @Test
     public void sortByIdPositiveTest() {
-        Comparator idComparator = new idComparator();
+        Comparator idComparator = new IdComparator();
         int result = idComparator.compare(stretchedCone, compressedCone);
         Assert.assertEquals(result, LESS);
     }
 
     @Test
     public void sortByRadiusPositiveTest() {
-        Comparator radiusComparator = new radiusComparator();
+        Comparator radiusComparator = new RadiusComparator();
         int result = radiusComparator.compare(stretchedCone, compressedCone);
         Assert.assertEquals(result, LESS);
     }
 
     @Test
     public void sortByVolumePositiveTest() {
-        Comparator volumeComparator = new volumeComparator();
+        Comparator volumeComparator = new VolumeComparator();
         int result = volumeComparator.compare(stretchedCone, compressedCone);
         Assert.assertEquals(result, LARGER);
     }
 
     @Test
     public void sortByIdNegativeTest() {
-        Comparator idComparator = new idComparator();
+        Comparator idComparator = new IdComparator();
         int result = idComparator.compare(compressedCone, stretchedCone);
         Assert.assertNotEquals(result, LESS);
     }
 
     @Test
     public void sortByRadiusNegativeTest() {
-        Comparator radiusComparator = new radiusComparator();
+        Comparator radiusComparator = new RadiusComparator();
         int result = radiusComparator.compare(compressedCone, stretchedCone);
         Assert.assertNotEquals(result, LESS);
     }
 
     @Test
     public void sortByVolumeNegativeTest() {
-        Comparator volumeComparator = new volumeComparator();
+        Comparator volumeComparator = new VolumeComparator();
         int result = volumeComparator.compare(compressedCone, stretchedCone);
         Assert.assertNotEquals(result, LARGER);
     }

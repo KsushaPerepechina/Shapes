@@ -1,7 +1,7 @@
 package by.epam.cone.reader;
 
 import by.epam.cone.exception.InaccessibleFileException;
-import by.epam.cone.printer.TextPrinter;
+import by.epam.cone.printer.DataPrinter;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -17,7 +17,7 @@ import java.util.List;
 
 public class DataReaderTest {
     private DataReader dataReader;
-    private TextPrinter textPrinter;
+    private DataPrinter dataPrinter;
     private static final String STRING_FILE_PATH = "data/test_file.txt";
     private Path FILE_PATH = Paths.get(STRING_FILE_PATH);
     private List<String> inputLines;
@@ -25,7 +25,7 @@ public class DataReaderTest {
     @BeforeClass
     public void setUp() throws IOException {
         dataReader = new DataReader();
-        textPrinter = new TextPrinter();
+        dataPrinter = new DataPrinter();
         Files.createFile(FILE_PATH);
         inputLines = new ArrayList<>(
                 Arrays.asList("volume 15.4", "base circle area 3.8"));
@@ -40,7 +40,7 @@ public class DataReaderTest {
     public void readAllLinesTest() throws InaccessibleFileException {
         inputLines.forEach(line -> {
             try {
-                textPrinter.writeString(STRING_FILE_PATH, line + "\n");
+                dataPrinter.writeString(STRING_FILE_PATH, line + "\n");
             } catch (InaccessibleFileException e) {
                 e.printStackTrace();
             }

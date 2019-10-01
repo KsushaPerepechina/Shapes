@@ -15,8 +15,8 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
-public class TextPrinterTest {
-    private TextPrinter textPrinter;
+public class DataPrinterTest {
+    private DataPrinter dataPrinter;
     private static final String STRING_FILE_PATH = "data/test_file.txt";
     private Path FILE_PATH = Paths.get(STRING_FILE_PATH);
     private static final String OUTPUT_LINE = "Hello, world!\n";
@@ -24,7 +24,7 @@ public class TextPrinterTest {
 
     @BeforeClass
     public void setUp(){
-        textPrinter = new TextPrinter();
+        dataPrinter = new DataPrinter();
     }
 
     @BeforeMethod
@@ -40,7 +40,7 @@ public class TextPrinterTest {
 
     @Test
     public void writeLineTest() throws InaccessibleFileException {
-        textPrinter.writeString(STRING_FILE_PATH, OUTPUT_LINE);
+        dataPrinter.writeString(STRING_FILE_PATH, OUTPUT_LINE);
         DataReader dataReader = new DataReader();
         List<String> fileContent = dataReader.readAllLines(STRING_FILE_PATH);
         String fileLastLine = fileContent.get(fileContent.size() - 1) + "\n";
@@ -50,7 +50,7 @@ public class TextPrinterTest {
     @Test(expectedExceptions = InaccessibleFileException.class,
             expectedExceptionsMessageRegExp = "File path <" + STRING_FILE_PATH + "ttt" + "> is incorrect.")
     public void writeInFileTest() throws InaccessibleFileException {
-        textPrinter.writeString(STRING_FILE_PATH + "ttt", OUTPUT_LINE);
+        dataPrinter.writeString(STRING_FILE_PATH + "ttt", OUTPUT_LINE);
 
     }
 
@@ -58,13 +58,13 @@ public class TextPrinterTest {
             expectedExceptionsMessageRegExp = "File <" + STRING_FILE_PATH + "> does not exist.")
     public void writeInNonexistentFileTest() throws Exception {
         Files.delete(Paths.get(STRING_FILE_PATH));
-        textPrinter.writeString(STRING_FILE_PATH, OUTPUT_LINE);
+        dataPrinter.writeString(STRING_FILE_PATH, OUTPUT_LINE);
     }
 
     @Test(expectedExceptions = InaccessibleFileException.class,
             expectedExceptionsMessageRegExp = "Writing to file <" + STRING_FILE_PATH + "> is not allowed.")
     public void writeInReadOnlyFileTest() throws InaccessibleFileException {
         testFile.setWritable(false);
-        textPrinter.writeString(STRING_FILE_PATH, OUTPUT_LINE);
+        dataPrinter.writeString(STRING_FILE_PATH, OUTPUT_LINE);
     }
 }

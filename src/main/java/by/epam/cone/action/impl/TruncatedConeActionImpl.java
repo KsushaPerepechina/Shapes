@@ -10,14 +10,14 @@ import static java.lang.Math.PI;
 import static java.lang.Math.pow;
 
 public class TruncatedConeActionImpl implements TruncatedConeAction {
-    private PointAction pointAction = new PointActionImpl();
-    private ConeAction coneAction = new ConeActionImpl();
 
     public double calculateHeight(Cone cone) {
+        PointAction pointAction = new PointActionImpl();
         return pointAction.calculateSegmentLength(cone.getBaseCircleCenter(), findUpperCircleCenter(cone));
     }
 
     public double calculateUpperCircleRadius(Cone cone) {
+        ConeAction coneAction = new ConeActionImpl();
         double smallConeHeight = coneAction.calculateHeight(cone) - calculateHeight(cone);
         return (smallConeHeight * cone.getRadiusOfRotation()) / coneAction.calculateHeight(cone);
     }

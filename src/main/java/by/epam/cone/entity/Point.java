@@ -1,6 +1,5 @@
 package by.epam.cone.entity;
 
-import java.util.Objects;
 import java.util.StringJoiner;
 
 public class Point {
@@ -53,7 +52,12 @@ public class Point {
 
     @Override
     public int hashCode() {
-        return Objects.hash(coordinateX, coordinateY, coordinateZ);
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + Double.hashCode(coordinateX);
+        result = prime * result + Double.hashCode(coordinateY);
+        result = prime * result + Double.hashCode(coordinateZ);
+        return result;
     }
 
     @Override
